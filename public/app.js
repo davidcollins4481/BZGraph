@@ -6,5 +6,12 @@ angular.module('graphApp', [
     'graphApp.homeView'
 ]).
     config(['$routeProvider', function($routeProvider) {
-        $routeProvider.otherwise({redirectTo: '/homeView'});
+        $routeProvider
+            .when('/homeView', {
+                templateUrl: 'homeView/homeView.html',
+                controller: 'HomeCtrl'
+            })
+            .otherwise({
+                redirectTo: '/homeView'
+            });
     }]);
