@@ -1,3 +1,6 @@
 node_modules/*
+
+# bower
+public/lib/*
 .DS_Store
 .idea/*
