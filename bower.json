@@ -1,0 +1,16 @@
+{
+  "name": "bugzilla-graph",
+  "version": "0.0.0",
+  "authors": [
+    "David Collins <davidcollins4481@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/lib",
+    "test",
+    "tests"
+  ]
+}
