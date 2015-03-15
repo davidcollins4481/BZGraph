@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "ejs": "^2.3.1",
     "express": "^4.12.2",
     "nconf": "^0.7.1",
     "sprintf": "^0.1.5",
