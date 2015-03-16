@@ -1,7 +1,7 @@
 angular.module('graphApp.factories', [])
 .service('BugManager', function() {
         
-    this._bugs = JSON.parse(localStorage['bugs']);
+    this._bugs = localStorage['bugs'] ? JSON.parse(localStorage['bugs']) : undefined;
         
     this.getBugs = function() {
         return this._bugs;
