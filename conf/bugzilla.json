@@ -2,5 +2,7 @@
   "http_auth_username" : "",
   "http_auth_password" : "",
   "bugzilla_username"  : "",
-  "bugzilla_password"  : ""
+  "bugzilla_password"  : "",
+  "bugzilla_url"       : "",
+  "bugzilla_port"      : ""
 }
