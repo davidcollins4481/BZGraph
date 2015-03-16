@@ -1,13 +1,24 @@
 'use strict';
 
-var homeViewController = angular.module('graphApp.homeView', ['ngRoute']);
+var homeViewController = angular.module('graphApp.homeView', ['ngRoute', 'graphApp.factories']);
 
 homeViewController.controller('HomeCtrl', 
-    function($scope, $http) {
+    function($scope, $http, BugManager) {
         
         $scope.bugsLastSynced = localStorage['bugsLastSynced'] || 'no data synced' ;
 
         $scope.loading = 'none';
+
+        $scope.options = [
+            {title: "Arial" , text: 'Url for Arial' },
+            {title: "Helvetica" , text: 'Url for Helvetica' }
+        ];
+
+        $scope.selectedOption = $scope.options[0];
+        
+        $scope.change= function(option){
+            alert(option.title);
+        }
 
         $scope.sync = function($event) {
             var button = $event.currentTarget;
@@ -29,5 +40,8 @@ homeViewController.controller('HomeCtrl',
                     $scope.loading = 'none';
                 })
         }
+        
+        
+        
     }
 );

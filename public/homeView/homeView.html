@@ -1,3 +1,7 @@
 <p><b>Bugs last synced:</b> {{ bugsLastSynced }}</p>
 <button ng-click="sync($event)">Sync Bugs</button>
 <img src="/img/ajax-loader.gif" style="display: {{ loading }}" alt=""/>
+
+<br/><br/>
+
+<select ng-model="selectedOption" ng-options="option.title for option in options" ng-change="change(selectedOption)"></select>
